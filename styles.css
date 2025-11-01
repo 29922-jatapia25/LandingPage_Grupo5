@@ -1,0 +1,76 @@
+/* =========================================================
+   DulceArte — Landing (Bootstrap 5)
+   Layout igual al ejemplo, temática repostería
+   ========================================================= */
+
+/* RESET BÁSICO */
+html, body { height: 100%; margin: 0; padding: 0; }
+
+/* FONDO: degradado + IMAGEN LOCAL */
+body{
+  background:
+    linear-gradient(rgba(95,114,189,0.80), rgba(155,35,234,0.70)),
+    url("img/reposteria.jpg") center/cover no-repeat fixed; /* <- imagen local */
+  color: #fff;
+}
+
+/* LOGO Y MARCA */
+.logo{
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.35));
+}
+.brand-name{ color: #fff; font-size: 1.1rem; }
+
+/* CONTENEDOR HERO (misma estructura de referencia) */
+.hero{ padding-top: 8px; padding-bottom: 40px; }
+
+/* TÍTULO Y TEXTO */
+h1.display-3{
+  letter-spacing: 1px;
+  text-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
+.text-description{
+  letter-spacing: 1.2px;
+  max-width: 560px;
+  color: rgba(255,255,255,.92);
+}
+
+/* IMAGEN DISPOSITIVO/PASTELES (col izquierda) */
+.device{
+  max-width: 400px;
+  width: 100%;
+  filter: drop-shadow(0 24px 40px rgba(16,6,30,.45));
+}
+
+/* FORM */
+.form-control{
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.7);
+}
+.form-control::placeholder{ color: rgba(255,255,255,.85); }
+.btn.btn-outline{
+  border: 1px solid rgba(255,255,255,.85);
+  color: #2b1d16;             /* texto oscuro para contraste */
+  background: #fff;
+  font-weight: 700;
+}
+.btn.btn-outline:hover{
+  filter: brightness(0.95);
+}
+
+/* REDES SOCIALES */
+.social a{
+  color: #fffdcc;
+  font-size: 1.7rem;
+  line-height: 1;
+  display: inline-flex;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px){
+  .hero{ text-align: center; }
+  .text-description{ margin-left: auto; margin-right: auto; }
+}
